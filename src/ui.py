@@ -124,7 +124,13 @@ class UserInterface:
             print(f"Current quantity: {existing['quantity']}")
             try:
                 quantity = int(input("Enter quantity to add: "))
-                self.warehouse.add_item(existing['item'], quantity)
+                item = Item(
+                    existing['item']['id'],
+                    existing['item']['name'],
+                    existing['item']['description'],
+                    existing['item']['unit_price']
+                )
+                self.warehouse.add_item(item, quantity)
             except ValueError:
                 print("Error: Invalid quantity")
         else:
@@ -193,7 +199,7 @@ class UserInterface:
         print(f"{'Timestamp':<20} {'Action':<10} {'Item ID':<10} {'Name':<15} {'Qty':<5}")
         print(f"{'-'*60}")
         
-        for trans in transactions[-20:]:  # Show last 20
+        for trans in transactions[-20:]:
             print(f"{trans['timestamp']:<20} {trans['action']:<10} "
                   f"{trans['item_id']:<10} {trans['item_name']:<15} "
                   f"{trans['quantity']:<5}")
