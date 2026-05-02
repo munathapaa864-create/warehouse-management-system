@@ -1,0 +1,2 @@
+# Tier 1 uses no external dependencies
+# Core Python libraries only
