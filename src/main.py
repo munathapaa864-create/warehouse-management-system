@@ -1,5 +1,5 @@
 """
-Main entry point for Warehouse Management System Tier 1
+Main entry point for Warehouse Management System Tier 2
 """
 
 from .ui import UserInterface
