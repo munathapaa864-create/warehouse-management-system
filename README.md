@@ -1,24 +1,18 @@
-# Warehouse Management System (WMS) - Tier 1
+# Warehouse Management System (WMS) - Tier 2
 
 ## Overview
-A bulk storage warehouse management system that tracks items and their quantities. This is Tier 1 implementation focusing on simple quantity tracking.
+FIFO batch tracking warehouse management system. Tracks items in batches with First-In-First-Out removal logic.
 
 ## Features
-- Add items to warehouse (new or existing)
-- Remove items from warehouse
-- View stock summary with total values
-- View detailed item information
-- Transaction history logging
-- Bulk quantity tracking
+- FIFO batch tracking (oldest first)
+- Batch management with unique IDs
+- Supplier and date tracking
+- Add/remove items with batch awareness
 
 ## Requirements
 - Python 3.8 or higher
-- No external dependencies required
+- No external dependencies
 
-## Installation
-1. Clone the repository
-2. Navigate to the project directory
-3. Run the program:
-
+## Usage
 ```bash
 python -m src.main
