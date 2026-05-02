@@ -1,13 +1,15 @@
-# Warehouse Management System (WMS) - Tier 2
+# Warehouse Management System (WMS) - Tier 3
 
 ## Overview
-FIFO batch tracking warehouse management system. Tracks items in batches with First-In-First-Out removal logic.
+Individual item tracking warehouse management system. Every item has a unique serial number with full lifecycle tracking.
 
 ## Features
-- FIFO batch tracking (oldest first)
-- Batch management with unique IDs
-- Supplier and date tracking
-- Add/remove items with batch awareness
+- Unique serial number for every item
+- Individual item lifecycle tracking
+- Ship items to customers
+- Move items between locations
+- Search by name, serial, or location
+- Full item history with notes
 
 ## Requirements
 - Python 3.8 or higher

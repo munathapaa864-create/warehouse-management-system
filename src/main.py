@@ -1,14 +1,14 @@
 """
-Main entry point for Warehouse Management System Tier 2
+Main entry point for Warehouse Management System Tier 3
 """
 
-from .ui import UserInterface
+from .tracked_ui import TrackedUI
 
 def main():
     """
     Main function to run the Warehouse Management System
     """
-    ui = UserInterface()
+    ui = TrackedUI()
     ui.start()
 
 if __name__ == "__main__":
